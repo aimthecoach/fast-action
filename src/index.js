@@ -9,6 +9,7 @@ const run = async () => {
     console.log(`Calling ${url}!`);
     const time = new Date().toTimeString();
     core.setOutput("time", time);
+    console.log(`The time is ${time}`);
     await axios.post(url, {
       text: "Hello, World!",
     });
